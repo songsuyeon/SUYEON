@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>디미고</title>
+    <meta charset="utf-8">
+  
+</head>
+
+<body>
+    스마트문화앱콘텐츠제작<br>
+    <!--폼 만들기 연습-->
+    <!--value=이름 정하기-->
+    <!--login(이미지) 버튼을 누르면 autofocus required(야호)에 무조건 쓰라고 나옴 -->
+    <form action="search.php" method="post" autocomplete="off">  
+        <fieldset>    
+            <legend>개인정보</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name">
+            <label for="mail">이메일</label>
+            <input type="text" id="mail" size="50" maxlength="5">
+
+        </fieldset>
+
+        <fieldset>    
+            <legend>로그인정보</legend>
+            <label for="id">아이디</label>
+            <input type="text" id="id" size="5">
+            <label for="pwd">비밀번호</label>
+            <input type="password" id="pwd">
+
+            <input type="hidden" name="chk" value="yes">
+        
+            <input type="search">
+            <input type="url">
+            <input type="email">
+            <input type="tel">
+
+            <input type="number" min="1" max="5" value="1">
+            <input type="range" min="1" max="3" valuse="1" step="1">
+        <br>    
+            <label><input type="radio" name="subject" value="com">com</label>
+            <label><input type="radio" name="subject" value="com1" checked>com1</label>
+
+            <label><input type="checkbox" name="sub1" value="app">app</label>
+            <label><input type="checkbox" name="sub2" value="app1" checked>app1</label>
+        
+        <br>
+        <input type="color" value="#001EFF">
+        <input type="date" value="2020-04-14">
+        <input type="time" value="15:00">
+        <input type="datetime-local" value="2020-05-08T14:30"> 
+
+        <input type="submit" value="aaaa"><input type="reset">
+        <input type="image" src="images/ETERNITY.jpg" width="50" height="50" alt="login">
+        <input type="button" value="새 탭열기" onclick="window.open()">
+        <input type="file">
+        <input type="text" autofocus required placeholder="야호">
+        <input type="text" placeholder="홍길동">
+        <input type="text" value="디미고" readonly>
+        </fieldset>
+    </form>
+
+    <select size="10" multiple>
+        <optgroup label="공과대학">
+            <option value="archi">건축공학과</option>
+            <option value="mechanic" selected>기계공학과</option>
+            <option value="computer">컴퓨터공학과</option>
+        </optgroup>
+
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang" selected>어문학부</option>
+            <option value="philo">철학</option>
+        </optgroup>
+
+        <input type="text" list="choices">
+        <datalist id="choices">
+            <option value="grammar" label="문법"></option>
+            <option value="voca" label="어휘"></option>
+            <option value="speaking" label="회화"></option>
+            <option value="listening" label="리스닝"></option>
+        </datalist>
+        <textarea cols="50" rows="5"></textarea>
+        <p><label>진행률</label><progress value="50" max="100"></progress></p>
+        <p><label>사용량</label><meter value="0.8"></meter></p>
+        <p><label>사용량</label><meter value="50" min="0" max="100"></meter></p>
+    </select>
+
+</body>
+
+</html>
